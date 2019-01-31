@@ -1,6 +1,6 @@
 {
   "name": "snappydoo",
-  "bin": "./bin/snappydoo.js",
+  "bin": "./snappydoo.js",
   "version": "1.0.0",
   "description": "snappydoo or snappydonot, that is the question",
   "scripts": {
