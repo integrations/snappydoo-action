@@ -26,4 +26,4 @@ RUN npm ci
 COPY . .
 
 # Run `node /entrypoint.js`
-ENTRYPOINT ["node", "./bin/entrypoint.js"]
+ENTRYPOINT ["node", "entrypoint.js"]
