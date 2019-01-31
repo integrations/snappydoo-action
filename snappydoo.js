@@ -165,7 +165,7 @@ async function main () {
   })
 
   console.log(`Fetching ${Object.keys(snapshots).length} screenshot${Object.keys(snapshots).length === 1 ? '' : 's'} from message builder`)
-  const browser = await puppeteer.launch({ headless: true })
+  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox']})
   // for (const snapshotFileName of Object.keys(snapshots)) {
   await Promise.all(
     Object.keys(snapshots).map(async (snapshotFileName) => {
