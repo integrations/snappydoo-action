@@ -27,9 +27,10 @@
   },
   "homepage": "https://github.com/github-slack/snappydoo#readme",
   "dependencies": {
+    "actions-toolkit": "^1.1.1",
     "bottleneck": "^1.16.0",
     "commander": "^2.12.2",
-    "fs-path": "0.0.23",
+    "fs-path": "0.0.24",
     "puppeteer": "^0.13.0",
     "recursive-readdir": "^2.2.1",
     "relaxed-json": "^1.0.1"
