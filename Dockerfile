@@ -20,7 +20,7 @@ LABEL "com.github.actions.color"="purple"
 COPY package*.json ./
 
 RUN  apt-get update \
-     && apt-get install git-all
+     && apt-get install -y git-all
 
 # Install dependencies
 RUN npm ci
