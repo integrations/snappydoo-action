@@ -19,6 +19,9 @@ LABEL "com.github.actions.color"="purple"
 # Copy the package.json and package-lock.json
 COPY package*.json ./
 
+RUN  apt-get update \
+     && apt-get install git-all
+
 # Install dependencies
 RUN npm ci
 
