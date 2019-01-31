@@ -120,7 +120,9 @@ async function main () {
     console.error('Error: Please specify both an output and an input path.')
     process.exit(1)
   }
-  const { stdout, stderr } = await exec('git ls-files --modified --others --exclude-standard')
+  const { before, after } = require('/github/workflow/event.json')
+
+  const { stdout, stderr } = await exec(`git diff ${before}..${after} --name-only`)
   if (stderr) {
     throw new Error(`Couldn't run 'git ls-files' ${stderr}`)
   }
