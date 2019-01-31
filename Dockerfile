@@ -29,4 +29,4 @@ RUN npm ci
 COPY . .
 
 # Run `node /entrypoint.js`
-ENTRYPOINT ["/snappydoo.js"]
+RUN "/snappydoo"
